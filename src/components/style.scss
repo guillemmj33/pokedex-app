@@ -62,7 +62,7 @@ body {
       button {
         outline: none;
         border: none;
-        width: 150px;
+        width: 120px;
         padding: 0.3rem 0;
         margin: 1rem;
         font-size: 17px;
@@ -151,6 +151,10 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+
   .right-content {
     display: none;
   }
