@@ -12,6 +12,7 @@ body {
 
 #container  {
   padding-top: 15px;
+  width: 90%;
 }
 
 .navbar {
@@ -150,9 +151,50 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 374px) {
+  #container {
+    width: 100%;
+  }
+
   .right-content {
     display: none;
   }
+}
+
+@media screen and (min-width: 374px) and (max-width: 767px) {
+  .right-content {
+    display: none;
+  }
+
+  .left-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .btn-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 0 10px 0;
+
+      button {
+        outline: none;
+        border: none;
+        width: 120px;
+        padding: 0.3rem 0;
+        margin: 1rem;
+        font-size: 17px;
+        font-weight: bold;
+        color: white;
+        background-color: #B74555;
+        line-height: normal;
+        border-radius: 10px;
+      }
+    }
+  }
+  
 }
 
